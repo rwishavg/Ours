@@ -7,7 +7,7 @@ const Credit = () => {
 				Rwishav Ghosh
 			</Link>
 			<br></br>
-			<Link href="#" target="_blank">
+			<Link href="https://github.com/rwishavg/Ours" target="_blank">
 				Source
 			</Link>
 		</CreditContainer>

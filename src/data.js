@@ -22,6 +22,16 @@ function chillHop() {
 			active: false,
 		},
 		{
+			name: "We were Young",
+			cover:
+				"https://funkadelphia.files.wordpress.com/2012/09/odesza-summers-gone-lp.jpg",
+			artist: "Odenza",
+			audio: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
+		{
 			name: "Keep Going",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
