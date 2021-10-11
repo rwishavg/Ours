@@ -31,7 +31,7 @@ const NavContainer = styled.div`
 
 const H1 = styled.h1`
 	transition: all 0.5s ease;
-
+	margin-bottom: 20px;
 	@media screen and (max-width: 768px) {
 		visibility: ${(p) => (p.libraryStatus ? "hidden" : "visible")};
 		opacity: ${(p) => (p.libraryStatus ? "0" : "100")};
@@ -40,8 +40,10 @@ const H1 = styled.h1`
 `;
 
 const Button = styled.button`
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-left: 180px;
+	margin-bottom: 20px;
 	background: transparent;
-	border: none;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
 	padding: 0.5rem;

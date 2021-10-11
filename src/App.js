@@ -11,6 +11,9 @@ import Credit from "./components/Credit";
 // Import data
 import data from "./data";
 
+// const cors = require("cors");
+// app.use(cors());
+
 const App = () => {
 	// Ref
 	const audioRef = useRef(null);

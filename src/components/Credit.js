@@ -4,31 +4,33 @@ const Credit = () => {
 	return (
 		<CreditContainer>
 			<Link href="https://rwishav-ghosh.web.app/" target="_blank">
-				Rwishav Ghosh
+				Rwishav
 			</Link>
-			<br></br>
 			<Link href="https://github.com/rwishavg/Ours" target="_blank">
-				Source
+				code
 			</Link>
 		</CreditContainer>
 	);
 };
 
 const CreditContainer = styled.div`
+	padding: 5px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 	user-select: none;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: flex-end;
 	z-index: 12;
 	bottom: 5px;
 	right: 5px;
-	color: rgb(155, 155, 155);
-	font-size: 0.75rem;
+	color: black;
+	font-size: 1rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const Link = styled.a`
-	color: rgb(155, 155, 155);
+	color: black;
 `;
 export default Credit;

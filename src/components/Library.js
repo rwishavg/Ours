@@ -33,8 +33,8 @@ const LibraryContainer = styled.div`
 	box-shadow: 2px 2px 50px rgb(204, 204, 204);
 	user-select: none;
 	overflow: scroll;
-	transform: translateX(${(p) => (p.libraryStatus ? "0%" : "-100%")});
-	transition: all 0.5s ease;
+	transform: translateY(${(p) => (p.libraryStatus ? "0%" : "100%")});
+	transition: all 0.3s ease;
 	opacity: ${(p) => (p.libraryStatus ? "100" : "0")};
 	scrollbar-width: thin;
 	scrollbar-color: rgba(155, 155, 155, 0.5) tranparent;

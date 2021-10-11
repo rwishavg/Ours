@@ -129,16 +129,29 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
+	margin-top: 2%;
+	background-color: #F1F1F1;
 	min-height: 20vh;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	max-width: 50vw;
+	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	@media screen and (max-width : 768px){
+		border-radius: 0;
+		margin-left: 0%;
+		min-height: 30vh;
+		transform: translateX(0%);
+		max-width: 100vw;
+	}
 `;
 
 const TimeControlContainer = styled.div`
 	margin-top: 5vh;
-	width: 50%;
+	width: 70%;
 	display: flex;
 	@media screen and (max-width: 768px) {
 		width: 90%;
@@ -216,8 +229,8 @@ const PlayControlContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
-	width: 30%;
+	padding: 2rem;
+	width: 50%;
 	@media screen and (max-width: 768px) {
 		width: 60%;
 	}
