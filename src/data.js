@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-function chillHop() {
+
+function ours() {
 	return [
 		{
 			name: "Beaver Creek",
@@ -67,8 +68,8 @@ function chillHop() {
 				"https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
 			artist: "Aso, Middle School, Aviino",
 			// audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-			// audio: "https://www.mboxdrive.com/public_music_somebody-new.mp3",
-			audio: "https://cdn.discordapp.com/attachments/617325586930728972/896771595761229844/9272.mp3",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/public_music_somebody-new.mp3?alt=media&token=442e335c-a6e3-41e3-bb20-b51bf1b72bee",
+			// audio: "https://cdn.discordapp.com/attachments/617325586930728972/896771595761229844/9272.mp3",
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
 			active: false,
@@ -77,4 +78,4 @@ function chillHop() {
 	];
 }
 
-export default chillHop;
+export default ours;
