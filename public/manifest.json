@@ -1,10 +1,10 @@
 {
-	"short_name": "React App",
-	"name": "Create React App Sample",
+	"short_name": "Ours",
+	"name": "Ours: A Music Player",
 	"icons": [
 		{
-			"src": "logo.jpg",
-			"type": "image/jpg",
+			"src": "logo.png",
+			"type": "image/png",
 			"sizes": "512x512"
 		}
 	],
