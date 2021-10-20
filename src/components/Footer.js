@@ -13,9 +13,9 @@ export default function SimpleBottomNavigation({libraryStatus, setLibraryStatus}
   return (
     <Box>
       <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue); }}>
-          <BottomNavigationAction style={{zIndex: 100}} href="https://github.com/rwishavg/Ours" label="Source" icon={<SourceIcon />} />
-          <BottomNavigationAction style={{zIndex: 100}} onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
-          <BottomNavigationAction style={{zIndex: 100}} label="Developer" icon={<PersonIcon />} />
+          <BottomNavigationAction sx={{zIndex: 100}} href="https://github.com/rwishavg/Ours" label="Source" icon={<SourceIcon />} />
+          <BottomNavigationAction sx={{zIndex: 100}} onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
+          <BottomNavigationAction sx={{zIndex: 100}} label="Developer" icon={<PersonIcon />} />
         </BottomNavigation>
       </Box>
   );
