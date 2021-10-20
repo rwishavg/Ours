@@ -86,7 +86,7 @@ const App = () => {
 				libraryStatus={libraryStatus}
 			/>
 			<Credit />
-			<Footer libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+			<Footer libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
 			<audio
 				onLoadedMetadata={updateTimeHandler}
 				onTimeUpdate={updateTimeHandler}

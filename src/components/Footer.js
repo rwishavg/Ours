@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+// import styled from "styled-components";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import PersonIcon from '@mui/icons-material/Person';
@@ -10,18 +11,12 @@ export default function SimpleBottomNavigation({libraryStatus, setLibraryStatus}
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: 500 }}>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      >
-        <BottomNavigationAction label="Source" icon={<SourceIcon />} />
-        <BottomNavigationAction onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
-        <BottomNavigationAction label="Developer" icon={<PersonIcon />} />
-      </BottomNavigation>
-    </Box>
+      <Box sx={{ }}>
+      <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue); }}>
+          <BottomNavigationAction href="https://github.com/rwishavg/Ours" label="Source" icon={<SourceIcon />} />
+          <BottomNavigationAction onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
+          <BottomNavigationAction label="Developer" icon={<PersonIcon />} />
+        </BottomNavigation>
+      </Box>
   );
 }

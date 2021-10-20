@@ -6,9 +6,6 @@ const Credit = () => {
 			<Link href="https://rwishav-ghosh.web.app/" target="_blank">
 				Rwishav
 			</Link>
-			<Link href="https://github.com/rwishavg/Ours" target="_blank">
-				code
-			</Link>
 		</CreditContainer>
 	);
 };
