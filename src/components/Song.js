@@ -12,13 +12,18 @@ const Song = ({ currentSong }) => {
 };
 
 const SongContainer = styled.div`
-	margin-top: 10vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	min-height: 50vh;
 	max-height: 60vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-width: 768px) {
+		margin-top: 10vh;
+		margin-bottom: 0vh;
+	}
 `;
 
 const Img = styled.img`

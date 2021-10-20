@@ -130,10 +130,11 @@ const Player = ({
 
 const PlayerContainer = styled.div`
 	background-color: #F1F1F1;
-	min-height: 20vh;
+	min-height: 15vh;
 	margin-left: 50%;
+	margin-bottom: 1.5vh;
 	transform: translateX(-50%);
-	max-width: 50vw;
+	max-width: 43vw;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;

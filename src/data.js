@@ -155,6 +155,15 @@ function ours() {
 			id: uuidv4(),
 			active: false,
 		},
+		{
+			name: "Be Slow",
+			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2Fbe_slow.jpg?alt=media&token=28cdfaf5-01b7-4094-ab84-d87c165d98a2",
+			artist: "Harrison Ford",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FHarrison_Storm_Be_Slow.mp3?alt=media&token=c38cb703-7212-4421-add6-37ea38d1a2be",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
 		//ADD MORE HERE
 		//TEMPLATE:
 		// {

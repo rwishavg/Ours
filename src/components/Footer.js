@@ -11,11 +11,11 @@ export default function SimpleBottomNavigation({libraryStatus, setLibraryStatus}
   const [value, setValue] = React.useState(0);
 
   return (
-      <Box sx={{ }}>
+    <Box>
       <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue); }}>
-          <BottomNavigationAction href="https://github.com/rwishavg/Ours" label="Source" icon={<SourceIcon />} />
-          <BottomNavigationAction onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
-          <BottomNavigationAction label="Developer" icon={<PersonIcon />} />
+          <BottomNavigationAction style={{zIndex: 100}} href="https://github.com/rwishavg/Ours" label="Source" icon={<SourceIcon />} />
+          <BottomNavigationAction style={{zIndex: 100}} onClick={() => setLibraryStatus(!libraryStatus)} label="Library" icon={<LibraryMusicIcon />} />
+          <BottomNavigationAction style={{zIndex: 100}} label="Developer" icon={<PersonIcon />} />
         </BottomNavigation>
       </Box>
   );

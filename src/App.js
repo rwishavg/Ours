@@ -6,15 +6,11 @@ import "./App.css";
 import Player from "./components/Player";
 import Song from "./components/Song";
 import Library from "./components/Library";
-import Nav from "./components/Nav";
-import Credit from "./components/Credit";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 // Import data
 import data from "./data";
-
-// const cors = require("cors");
-// app.use(cors());
 
 const App = () => {
 	// Ref
@@ -64,7 +60,7 @@ const App = () => {
 
 	return (
 		<AppContainer libraryStatus={libraryStatus}>
-			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+			<Header libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
 			<Song currentSong={currentSong} />
 			<Player
 				isPlaying={isPlaying}
@@ -85,7 +81,6 @@ const App = () => {
 				setSongs={setSongs}
 				libraryStatus={libraryStatus}
 			/>
-			<Credit />
 			<Footer libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
 			<audio
 				onLoadedMetadata={updateTimeHandler}
