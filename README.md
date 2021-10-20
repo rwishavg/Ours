@@ -1,6 +1,6 @@
 # A music player web-application built on ReactJS.
 
-This project was made by following Dev Ed's react course. In the course, he used scss modules to style, while I used styled components. I choose to use styled components because of the advantage of being able to style based on props, which personally, is much more convenient than adding class and scss modules.
+I have used styled components. I chose to use styled components because of the advantage of being able to style based on props, which personally, is much more convenient than adding class and scss modules.
 
 ## Test it out yourself!
 
