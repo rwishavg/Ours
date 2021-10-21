@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Header = ({libraryStatus}) => {
+const Header = ({libraryStatus, devStatus}) => {
 	return (
 		<NavContainer>
-			<H1 libraryStatus={libraryStatus}>Ours</H1>
+			<H1 libraryStatus={libraryStatus} devStatus={devStatus}>Ours</H1>
 		</NavContainer>
 	);
 };

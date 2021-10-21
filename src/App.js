@@ -6,6 +6,7 @@ import "./App.css";
 import Player from "./components/Player";
 import Song from "./components/Song";
 import Library from "./components/Library";
+import Dev from "./components/Dev";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ const App = () => {
 	const [currentSong, setCurrentSong] = useState(songs[0]);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [libraryStatus, setLibraryStatus] = useState(false);
+	const [devStatus, setDevStatus] = useState(false);
 	const [songInfo, setSongInfo] = useState({
 		currentTime: 0,
 		duration: 0,
@@ -59,8 +61,8 @@ const App = () => {
 	};
 
 	return (
-		<AppContainer libraryStatus={libraryStatus}>
-			<Header libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+		<AppContainer libraryStatus={libraryStatus} devStatus={devStatus}>
+			<Header libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} devStatus={devStatus} setDevStatus={setDevStatus} />
 			<Song currentSong={currentSong} />
 			<Player
 				isPlaying={isPlaying}
@@ -81,7 +83,8 @@ const App = () => {
 				setSongs={setSongs}
 				libraryStatus={libraryStatus}
 			/>
-			<Footer libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
+			<Dev devStatus={devStatus}/>
+			<Footer libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} devStatus={devStatus} setDevStatus={setDevStatus}/>
 			<audio
 				onLoadedMetadata={updateTimeHandler}
 				onTimeUpdate={updateTimeHandler}
@@ -96,8 +99,10 @@ const App = () => {
 const AppContainer = styled.div`
 	transition: all 0.5s ease;
 	margin-left: ${(p) => (p.libraryStatus ? "20rem" : "0")};
+	margin-right: ${(p) => (p.devStatus ? "20rem" : "0")};
 	@media screen and (max-width: 768px) {
 		margin-left: 0;
+		margin-right: 0;
 	}
 `;
 
