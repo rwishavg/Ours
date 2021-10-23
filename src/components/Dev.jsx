@@ -44,11 +44,10 @@ const DevContainer = styled.div`
 		border: transparent;
 	}
 	@media screen and (max-width: 768px) {
-		height : 90%;
+		height : 100%;
 		box-shadow: none;
 		width: 100%;
 		z-index: 9;
-		
 	}
 `;
 

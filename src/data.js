@@ -3,6 +3,33 @@ import { v4 as uuidv4 } from "uuid";
 function ours() {
 	return [
 		{
+			name: "Under Dusk",
+			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2FUnder_Dusk.jpeg?alt=media&token=d58dfafd-8d6e-4605-a1ce-342cd602ee38",
+			artist: "Harrison Ford",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FHarrison_Storm_Enna_Blake___Under_Dusk_Official.mp3?alt=media&token=cf560256-a1ae-46f7-8cfa-4bf8b8c10c89",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
+		{
+			name: "Good Together",
+			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2FGood_together.jpg?alt=media&token=313d030e-b2f6-4f64-95ba-c9d472044bcf",
+			artist: "Shy Martin",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FShy_Martin_Good_Together.mp3?alt=media&token=06347632-9b5b-458f-a9a9-14428e61dca3",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
+		{
+			name: "Atlantis",
+			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2FAtlantis.png?alt=media&token=b5a6d3b1-c5a1-4f9f-b7b1-aec5bca92235",
+			artist: "Seafret",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FSeafret_Atlantis.mp3?alt=media&token=90726811-c46e-4665-8ea9-34cd1856f598",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
+		{
 			name: "My Poor Heart",
 			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2Fmy_poor_heart.jpg?alt=media&token=1ae87931-be61-4d77-8397-586a6cd95d18",
 			artist: "Andrew Belle",
@@ -164,6 +191,16 @@ function ours() {
 			id: uuidv4(),
 			active: false,
 		},
+		{
+			name: "Kiss me Slowly",
+			cover:"https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Images%2Fkiss_me_slowly.jpg?alt=media&token=f365c8ae-00c4-4c16-bbd4-3ced08ae2bdd",
+			artist: "Parachute",
+			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FParachute_Kiss_Me_Slowly.mp3?alt=media&token=99255d0a-9bcf-4438-a1fb-09eb2d847856",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
+		
 		//ADD MORE HERE
 		//TEMPLATE:
 		// {

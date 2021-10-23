@@ -129,7 +129,7 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
-	background-color: #F1F1F1;
+	background-color: #ffffffd6;
 	min-height: 15vh;
 	margin-left: 50%;
 	margin-bottom: 1.5vh;
@@ -143,7 +143,7 @@ const PlayerContainer = styled.div`
 	@media screen and (max-width : 768px){
 		border-radius: 0;
 		margin-left: 0%;
-		min-height: 30vh;
+		min-height: 20vh;
 		transform: translateX(0%);
 		max-width: 100vw;
 	}

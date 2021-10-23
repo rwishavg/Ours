@@ -27,6 +27,7 @@ const NavContainer = styled.div`
 `;
 
 const H1 = styled.h1`
+	margin-left: 5%;
 	transition: all 0.5s ease;
 	margin-bottom: 20px;
 	@media screen and (max-width: 768px) {

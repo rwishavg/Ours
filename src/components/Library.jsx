@@ -45,12 +45,12 @@ const LibraryContainer = styled.div`
 		background: transparent;
 	}
 	&::-webkit-scrollbar-thumb {
-		background-color: rgba(155, 155, 155, 0.5);
+		background-color: rgba(93, 132, 136, 0.678);
 		border-radius: 20px;
 		border: transparent;
 	}
 	@media screen and (max-width: 768px) {
-		height : 90%;
+		height : 100%;
 		box-shadow: none;
 		width: 100%;
 		z-index: 9;
