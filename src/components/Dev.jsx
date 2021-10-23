@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
+import pic from "../images/avatar/pic.png";
 
 const Dev = ({ devStatus }) => {
 	return (
 		<DevContainer devStatus={devStatus}>
-      <Avatar
+			<Avatar
         alt="Rwishav Ghosh"
-        src="../images/avatar/pic.png"
-        sx={{ width: 100, height: 100, marginTop: 35, marginLeft: 20 }}
+				src={pic}
+				sx={{ width: 150, height: 150, marginTop: 30, marginLeft: 15 }}
       />
 			<H1>Rwishav Ghosh</H1>
+			<H3>Software Engineer</H3>
 		</DevContainer>
 	);
 };
@@ -25,7 +27,7 @@ const DevContainer = styled.div`
 	box-shadow: 2px 2px 50px rgb(204, 204, 204);
 	user-select: none;
 	overflow: scroll;
-	transform: translateY(${(p) => (p.devStatus ? "0%" : "100%")});
+	transform: translateX(${(p) => (p.devStatus ? "0%" : "100%")});
 	transition: all 0.3s ease;
 	opacity: ${(p) => (p.devStatus ? "100" : "0")};
 	scrollbar-width: thin;
@@ -46,14 +48,23 @@ const DevContainer = styled.div`
 		box-shadow: none;
 		width: 100%;
 		z-index: 9;
+		
 	}
 `;
 
 const H1 = styled.h2`
 	/* margin-top: 50%; */
-	margin-left: 40%;
-	transform: translateX(-30%);
-	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	padding: 1rem;
+`;
+
+const H3 = styled.h3`
+	display: flex;
+	justify-content: center;
+	/* transform: translateX(-30%); */
+	/* padding: 2rem; */
 `;
 
 export default Dev;
