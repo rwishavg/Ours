@@ -129,7 +129,7 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
-	background-color: #ffffffd6;
+	background-color: #ffffff;
 	min-height: 15vh;
 	margin-left: 50%;
 	margin-bottom: 1.5vh;

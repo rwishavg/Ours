@@ -200,6 +200,15 @@ function ours() {
 			id: uuidv4(),
 			active: false,
 		},
+		{
+			name: "",
+			cover:"",
+			artist: "",
+			audio: "",
+			color: ["#EF8EA9", "#ab417f"],
+			id: uuidv4(),
+			active: false,
+		},
 		
 		//ADD MORE HERE
 		//TEMPLATE:
