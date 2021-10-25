@@ -50,6 +50,7 @@ const LibraryContainer = styled.div`
 		border: transparent;
 	}
 	@media screen and (max-width: 768px) {
+		padding-bottom: 50px;
 		height : 100%;
 		box-shadow: none;
 		width: 100%;
