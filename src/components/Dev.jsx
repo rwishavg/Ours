@@ -3,16 +3,55 @@ import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
 import pic from "../images/avatar/pic.png";
 
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LanguageIcon from '@mui/icons-material/Language';
+
 const Dev = ({ devStatus }) => {
 	return (
 		<DevContainer devStatus={devStatus}>
 			<Avatar
         alt="Rwishav Ghosh"
 				src={pic}
-				sx={{ width: 150, height: 150, marginTop: 30, marginLeft: 15 }}
+				sx={{ width: 160, height: 160, marginTop: 25, marginLeft: 15 }}
       />
 			<H1>Rwishav Ghosh</H1>
 			<H3>Software Engineer</H3>
+      <List sx={{marginTop: 5, marginLeft: 5}}>
+        <ListItemButton>
+          <ListItemIcon>
+            <LanguageIcon />
+          </ListItemIcon>
+          <ListItemText primary="Website" />
+				</ListItemButton>
+					
+        <ListItemButton>
+          <ListItemIcon>
+            <LinkedInIcon />
+          </ListItemIcon>
+          <ListItemText primary="LinkedIn" />
+				</ListItemButton>
+
+				<ListItemButton>
+          <ListItemIcon>
+            <TwitterIcon />
+          </ListItemIcon>
+          <ListItemText primary="Twitter" />
+				</ListItemButton>
+
+				<ListItemButton>
+          <ListItemIcon>
+            <InstagramIcon />
+          </ListItemIcon>
+          <ListItemText primary="Instagram" />
+				</ListItemButton>
+					
+      </List>
 		</DevContainer>
 	);
 };
@@ -37,11 +76,6 @@ const DevContainer = styled.div`
 	}
 	&::-webkit-scrollbar-track {
 		background: transparent;
-	}
-	&::-webkit-scrollbar-thumb {
-		background-color: rgba(155, 155, 155, 0.5);
-		border-radius: 20px;
-		border: transparent;
 	}
 	@media screen and (max-width: 768px) {
 		height : 100%;

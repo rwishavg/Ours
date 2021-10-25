@@ -151,10 +151,10 @@ const PlayerContainer = styled.div`
 
 const TimeControlContainer = styled.div`
 	margin-top: 5vh;
-	width: 70%;
+	width: 80%;
 	display: flex;
 	@media screen and (max-width: 768px) {
-		width: 90%;
+		width: 94%;
 	}
 `;
 
