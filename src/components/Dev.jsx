@@ -18,7 +18,7 @@ const Dev = ({ devStatus }) => {
 			<Avatar
         alt="Rwishav Ghosh"
 				src={pic}
-				sx={{ width: 160, height: 160, marginTop: 25, marginLeft: 15 }}
+				sx={{ width: 160, height: 160, marginTop: '10vh', marginLeft: 15 }}
       />
 			<H1>Rwishav Ghosh</H1>
 			<H3>Software Engineer</H3>

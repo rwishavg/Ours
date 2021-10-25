@@ -27,10 +27,10 @@ const NavContainer = styled.div`
 	}
 `;
 
-const H1 = styled.h1`
+const H1 = styled.h2`
 	/* margin-left: 5%; */
 	margin-left: 10px;
-	margin-top: 30px;
+	margin-top: 25px;
 	transition: all 0.5s ease;
 	margin-bottom: 20px;
 	@media screen and (max-width: 768px) {
@@ -42,8 +42,8 @@ const H1 = styled.h1`
 
 const IMG = styled.img`
 	margin-left: 5%;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	@media screen and (max-width: 768px) {
 		margin-left: 0%;
 		visibility: ${(p) => (p.libraryStatus ? "hidden" : "visible")};

@@ -13,21 +13,23 @@ const Song = ({ currentSong }) => {
 
 const SongContainer = styled.div`
 	margin-top: 5vh;
-	margin-bottom: 5vh;
-	min-height: 50vh;
-	max-height: 60vh;
+	margin-bottom: 3vh;
+	min-height: 40vh;
+	max-height: 50vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	@media screen and (max-width: 768px) {
+		min-height: 50vh;
+		max-height: 60vh;
 		margin-top: 10vh;
 		margin-bottom: 0vh;
 	}
 `;
 
 const Img = styled.img`
-	width: 20%;
+	width: 18%;
 	border-radius: 50%;
 	@media screen and (max-width: 768px) {
 		width: 50%;
@@ -35,7 +37,7 @@ const Img = styled.img`
 `;
 
 const H1 = styled.h2`
-	padding: 3rem 1rem 1rem 1rem;
+	padding:2rem 1rem 1rem 1rem;
 `;
 
 const H2 = styled.h3`

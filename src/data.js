@@ -9,7 +9,7 @@ function ours() {
 			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FHarrison_Storm_Enna_Blake___Under_Dusk_Official.mp3?alt=media&token=cf560256-a1ae-46f7-8cfa-4bf8b8c10c89",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
-			active: false,
+			active: true,
 		},
 		{
 			name: "Good Together",
@@ -36,7 +36,7 @@ function ours() {
 			audio: "https://firebasestorage.googleapis.com/v0/b/ours-db.appspot.com/o/Audio%20Files%2FAndrew_Belle_My_Poor_Heart.mp3?alt=media&token=5deda93a-78e1-4186-85e7-b2dd173de796",
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
-			active: true,
+			active: false,
 		},
 		{
 			name: "Sky's Still Blue",
