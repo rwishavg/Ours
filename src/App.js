@@ -1,8 +1,10 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
+
+//importing app styles
 import "./App.css";
 
-// Import components
+// Importing all components
 import Player from "./components/Player";
 import Song from "./components/Song";
 import Library from "./components/Library";
@@ -10,14 +12,14 @@ import Dev from "./components/Dev";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Import data
+// Importing database data
 import data from "./data";
 
 const App = () => {
-	// Ref
+	//Default Ref
 	const audioRef = useRef(null);
 
-	// State
+	//Default States
 	const [songs, setSongs] = useState(data());
 	const [currentSong, setCurrentSong] = useState(songs[0]);
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -28,7 +30,7 @@ const App = () => {
 		duration: 0,
 	});
 
-	// Functions
+	//Functions
 	const updateTimeHandler = (e) => {
 		const currentTime = e.target.currentTime;
 		const duration = e.target.duration;
@@ -96,6 +98,7 @@ const App = () => {
 	);
 };
 
+//styles for app container 
 const AppContainer = styled.div`
 	transition: all 0.5s ease;
 	margin-left: ${(p) => (p.libraryStatus ? "20rem" : "0")};

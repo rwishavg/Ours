@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const LibrarySong = ({ song, setCurrentSong, audioRef, isPlaying, songs, setSongs }) => {
-	// Function
+
 	const songSelectHandler = async () => {
 		await setCurrentSong(song);
 		const curSong = song;
@@ -39,6 +39,8 @@ const LibrarySong = ({ song, setCurrentSong, audioRef, isPlaying, songs, setSong
 		</LibrarySongContainer>
 	);
 };
+
+//style for library-song container
 const LibrarySongContainer = styled.div`
 	padding: 0 2rem 0 2rem;
 	height: 100px;
@@ -55,6 +57,7 @@ const LibrarySongContainer = styled.div`
 	}
 `;
 
+//style for library-song details
 const LibrarySongDescription = styled.div`
 	width: 100%;
 	height: 100%;
@@ -63,16 +66,19 @@ const LibrarySongDescription = styled.div`
 	justify-content: center;
 `;
 
+//style for library song image
 const Img = styled.img`
 	margin: 20px 0;
 	height: 60px;
 `;
 
+//library song name
 const H1 = styled.h3`
 	padding-left: 1rem;
 	font-size: 1rem;
 `;
 
+//library song artist
 const H2 = styled.h4`
 	padding-left: 1rem;
 	font-size: 0.7rem;

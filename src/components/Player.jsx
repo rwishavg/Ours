@@ -1,9 +1,12 @@
 import React from "react";
+
+//payer icons from fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+
+//styled components
 import styled from "styled-components";
 
-// style
 const pointer = { cursor: "pointer" };
 
 const Player = ({
@@ -128,6 +131,7 @@ const Player = ({
 	);
 };
 
+//style for player container which contains all the player controls
 const PlayerContainer = styled.div`
 	background-color: #ffffff;
 	min-height: 15vh;
@@ -149,6 +153,7 @@ const PlayerContainer = styled.div`
 	}
 `;
 
+//style for the porgress bar
 const TimeControlContainer = styled.div`
 	margin-top: 5vh;
 	width: 80%;
@@ -157,6 +162,7 @@ const TimeControlContainer = styled.div`
 		width: 94%;
 	}
 `;
+
 
 const Track = styled.div`
 	background: lightblue;

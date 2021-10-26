@@ -11,6 +11,7 @@ const Header = ({libraryStatus, devStatus}) => {
 	);
 };
 
+//style for header-container
 const NavContainer = styled.div`
 	min-height: 10vh;
 	display: flex;
@@ -27,6 +28,7 @@ const NavContainer = styled.div`
 	}
 `;
 
+//style for header text
 const H1 = styled.h2`
 	/* margin-left: 5%; */
 	margin-left: 10px;
@@ -40,6 +42,7 @@ const H1 = styled.h2`
 	}
 `;
 
+//style for header logo
 const IMG = styled.img`
 	margin-left: 5%;
 	width: 30px;

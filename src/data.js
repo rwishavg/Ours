@@ -1,3 +1,6 @@
+//This file assimilates all the songs and their data in one place from the Firebase storage database
+
+//uuidv4 is used to generate unique ids for each song as keys required for mapping
 import { v4 as uuidv4 } from "uuid";
 
 function ours() {
@@ -237,8 +240,8 @@ function ours() {
 			active: false,
 		},
 		
+		//TEMPLATE FOR NEW SONGS:
 		//ADD MORE HERE
-		//TEMPLATE:
 		// {
 		// 	name: "",
 		// 	cover:"",

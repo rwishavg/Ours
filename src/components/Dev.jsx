@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Avatar from '@mui/material/Avatar';
 import pic from "../images/avatar/pic.png";
 
+//importing mui elements
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -14,12 +15,8 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 const Dev = ({ devStatus }) => {
 	return (
-		<DevContainer devStatus={devStatus}>
-			<Avatar
-        alt="Rwishav Ghosh"
-				src={pic}
-				sx={{ width: 160, height: 160, marginTop: '10vh', marginLeft: 15 }}
-      />
+		<DevContainer devStatus={devStatus}>}
+			<Avatar alt="Rwishav Ghosh" src={pic} sx={avatar}/>
 			<H1>Rwishav Ghosh</H1>
 			<H3>Software Engineer</H3>
       <List sx={{marginTop: 5, marginLeft: 5}}>
@@ -55,6 +52,8 @@ const Dev = ({ devStatus }) => {
 		</DevContainer>
 	);
 };
+
+//style for dev container
 const DevContainer = styled.div`
 	position: fixed;
 	z-index: 9;
@@ -85,19 +84,26 @@ const DevContainer = styled.div`
 	}
 `;
 
+//style for dev picture
+const avatar = {
+	width: 160,
+	height: 160,
+	marginTop: '10vh',
+	marginLeft: 15,
+}
+
+//style for dev name
 const H1 = styled.h2`
-	/* margin-top: 50%; */
 	display: flex;
 	justify-content: center;
 	margin-top: 2rem;
 	padding: 1rem;
 `;
 
+//style for dev title
 const H3 = styled.h3`
 	display: flex;
 	justify-content: center;
-	/* transform: translateX(-30%); */
-	/* padding: 2rem; */
 `;
 
 export default Dev;

@@ -11,6 +11,7 @@ const Song = ({ currentSong }) => {
 	);
 };
 
+//style for song container element
 const SongContainer = styled.div`
 	margin-top: 5vh;
 	margin-bottom: 3vh;
@@ -28,6 +29,7 @@ const SongContainer = styled.div`
 	}
 `;
 
+//style for the song cover-image
 const Img = styled.img`
 	width: 18%;
 	border-radius: 50%;
@@ -36,10 +38,12 @@ const Img = styled.img`
 	}
 `;
 
+//style for song name
 const H1 = styled.h2`
 	padding:2rem 1rem 1rem 1rem;
 `;
 
+//style for song artist
 const H2 = styled.h3`
 	font-size: 1rem;
 `;

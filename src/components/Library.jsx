@@ -27,7 +27,7 @@ const LibraryContainer = styled.div`
 	z-index: 9;
 	top: 0;
 	left: 0;
-	width: 25rem;
+	width: 23vw;
 	height: 100%;
 	background-color: white;
 	box-shadow: 2px 2px 50px rgb(204, 204, 204);
