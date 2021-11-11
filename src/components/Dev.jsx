@@ -15,43 +15,53 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 const Dev = ({ devStatus }) => {
 	return (
-		<DevContainer devStatus={devStatus}>}
+		<DevContainer devStatus={devStatus}>
 			<Avatar alt="Rwishav Ghosh" src={pic} sx={avatar}/>
 			<H1>Rwishav Ghosh</H1>
 			<H3>Software Engineer</H3>
-      <List sx={{marginTop: 5, marginLeft: 5}}>
-        <ListItemButton>
-          <ListItemIcon>
-            <LanguageIcon />
-          </ListItemIcon>
-          <ListItemText primary="Website" />
-				</ListItemButton>
-					
-        <ListItemButton>
-          <ListItemIcon>
-            <LinkedInIcon />
-          </ListItemIcon>
-          <ListItemText primary="LinkedIn" />
-				</ListItemButton>
-
-				<ListItemButton>
-          <ListItemIcon>
-            <TwitterIcon />
-          </ListItemIcon>
-          <ListItemText primary="Twitter" />
-				</ListItemButton>
-
-				<ListItemButton>
-          <ListItemIcon>
-            <InstagramIcon />
-          </ListItemIcon>
-          <ListItemText primary="Instagram" />
-				</ListItemButton>
-					
+			<List sx={{ marginTop: 5, marginLeft: 5 }}>
+        <A href="https://rwishav-ghosh.web.app/">
+					<ListItemButton>
+						<ListItemIcon>
+							<LanguageIcon />
+						</ListItemIcon>
+						<ListItemText primary="Website" />
+					</ListItemButton>
+				</A>
+				<A href="https://www.linkedin.com/in/rwishav/">
+					<ListItemButton>
+						<ListItemIcon>
+							<LinkedInIcon />
+						</ListItemIcon>
+						<ListItemText primary="LinkedIn" />
+					</ListItemButton>
+				</A>
+				<A href="https://twitter.com/rwishavvv">
+					<ListItemButton>
+						<ListItemIcon>
+							<TwitterIcon />
+						</ListItemIcon>
+						<ListItemText primary="Twitter" />
+					</ListItemButton>
+				</A>
+				<A href ="https://www.instagram.com/rwishavvv/">
+					<ListItemButton>
+						<ListItemIcon>
+							<InstagramIcon />
+						</ListItemIcon>
+						<ListItemText primary="Instagram" />
+					</ListItemButton>
+				</A>
       </List>
 		</DevContainer>
 	);
 };
+
+const A = styled.a`
+	text-decoration: none;
+	text-decoration-color: black;
+	color: black;
+`;
 
 //style for dev container
 const DevContainer = styled.div`
